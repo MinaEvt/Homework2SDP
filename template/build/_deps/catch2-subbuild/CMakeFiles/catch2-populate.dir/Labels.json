@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Mina/Desktop/hw2/template/build/_deps/catch2-subbuild/CMakeFiles/catch2-populate"
+		},
+		{
+			"file" : "C:/Users/Mina/Desktop/hw2/template/build/_deps/catch2-subbuild/CMakeFiles/f83d895b952ab2858c98d67f0a895afc/catch2-populate.rule"
+		},
+		{
+			"file" : "C:/Users/Mina/Desktop/hw2/template/build/_deps/catch2-subbuild/CMakeFiles/cc21a726d5c60f5f445fa2ebcf2381c3/catch2-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Mina/Desktop/hw2/template/build/_deps/catch2-subbuild/CMakeFiles/96bb9002a0bfe0b626a014dddc78dc2a/catch2-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/Mina/Desktop/hw2/template/build/_deps/catch2-subbuild/CMakeFiles/96bb9002a0bfe0b626a014dddc78dc2a/catch2-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Mina/Desktop/hw2/template/build/_deps/catch2-subbuild/CMakeFiles/96bb9002a0bfe0b626a014dddc78dc2a/catch2-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/Mina/Desktop/hw2/template/build/_deps/catch2-subbuild/CMakeFiles/96bb9002a0bfe0b626a014dddc78dc2a/catch2-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/Mina/Desktop/hw2/template/build/_deps/catch2-subbuild/CMakeFiles/96bb9002a0bfe0b626a014dddc78dc2a/catch2-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Mina/Desktop/hw2/template/build/_deps/catch2-subbuild/CMakeFiles/96bb9002a0bfe0b626a014dddc78dc2a/catch2-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Mina/Desktop/hw2/template/build/_deps/catch2-subbuild/CMakeFiles/96bb9002a0bfe0b626a014dddc78dc2a/catch2-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/Mina/Desktop/hw2/template/build/_deps/catch2-subbuild/CMakeFiles/96bb9002a0bfe0b626a014dddc78dc2a/catch2-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"catch2-populate"
+		],
+		"name" : "catch2-populate"
+	}
+}

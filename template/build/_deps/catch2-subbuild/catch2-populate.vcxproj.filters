@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Mina\Desktop\hw2\template\build\_deps\catch2-subbuild\CMakeFiles\96bb9002a0bfe0b626a014dddc78dc2a\catch2-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Mina\Desktop\hw2\template\build\_deps\catch2-subbuild\CMakeFiles\96bb9002a0bfe0b626a014dddc78dc2a\catch2-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Mina\Desktop\hw2\template\build\_deps\catch2-subbuild\CMakeFiles\96bb9002a0bfe0b626a014dddc78dc2a\catch2-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Mina\Desktop\hw2\template\build\_deps\catch2-subbuild\CMakeFiles\96bb9002a0bfe0b626a014dddc78dc2a\catch2-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Mina\Desktop\hw2\template\build\_deps\catch2-subbuild\CMakeFiles\96bb9002a0bfe0b626a014dddc78dc2a\catch2-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Mina\Desktop\hw2\template\build\_deps\catch2-subbuild\CMakeFiles\96bb9002a0bfe0b626a014dddc78dc2a\catch2-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Mina\Desktop\hw2\template\build\_deps\catch2-subbuild\CMakeFiles\96bb9002a0bfe0b626a014dddc78dc2a\catch2-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Mina\Desktop\hw2\template\build\_deps\catch2-subbuild\CMakeFiles\96bb9002a0bfe0b626a014dddc78dc2a\catch2-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Mina\Desktop\hw2\template\build\_deps\catch2-subbuild\CMakeFiles\cc21a726d5c60f5f445fa2ebcf2381c3\catch2-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Mina\Desktop\hw2\template\build\_deps\catch2-subbuild\CMakeFiles\f83d895b952ab2858c98d67f0a895afc\catch2-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Mina\Desktop\hw2\template\build\_deps\catch2-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Mina\Desktop\hw2\template\build\_deps\catch2-subbuild\CMakeFiles\catch2-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F6BBA917-DADD-3F3A-A92B-5277EB76CE59}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
