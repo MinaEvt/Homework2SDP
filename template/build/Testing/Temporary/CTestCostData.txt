@@ -1,0 +1,17 @@
+empty 0 1
+no 0 1
+no 0 0
+Simple 0 0
+Simple 0 0
+More 0 0
+empty simulation 1 0.0216694
+no students 1 0.021973
+no space in bar 0 0
+Simple simulation - one student 0 0
+Simple simulation - one group 0 0
+More complex simulation 0 0
+---
+no space in bar
+Simple simulation - one student
+Simple simulation - one group
+More complex simulation

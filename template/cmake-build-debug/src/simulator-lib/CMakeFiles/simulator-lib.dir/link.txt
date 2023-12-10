@@ -1,0 +1,2 @@
+C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\ar.exe qc libsimulator-lib.a "CMakeFiles/simulator-lib.dir/bar-simulator.cpp.obj"
+C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\ranlib.exe libsimulator-lib.a

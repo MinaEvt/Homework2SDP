@@ -3,7 +3,7 @@
 #include <string>
 #include <ostream>
 
-// Student::Student() : fn(0), minutes(0), major(), enthusiasm(0) {}
+Student::Student() : fn(0), minutes(0), major(), enthusiasm(0) {}
 
 int Student::getFn() const
 {
@@ -33,7 +33,7 @@ Student::Student(int fn, int minutes, Major major, int enthusiasm)
     this->enthusiasm = enthusiasm;
 }
 
-std::string Student::majorToString(Major m) const
+std::string Student::majorToString(Major m)
 {
     switch (m)
     {
@@ -58,6 +58,7 @@ std::string Student::majorToString(Major m) const
         break;
 
     default:
+        throw std::exception();
         break;
     }
 }
@@ -65,7 +66,8 @@ std::string Student::majorToString(Major m) const
 bool Student::isValidFn(int fn)
 {
     std::string str = std::to_string(fn);
-    int digitNumber = str.length();
+    int digitNumber;
+    digitNumber = str.length();
     if (digitNumber == 9)
     {
         return true;
@@ -91,6 +93,6 @@ bool Student::isValidMajor(Major major)
 
 std::ostream &operator<<(std::ostream &os, const Student &student)
 {
-    os << "Student details: " << student.getFn() << student.getMinutes() << student.majorToString(student.getMajor()) << student.getEnthusiasm(); // Customize this based on your Student class members
+    os << "Student details: " << student.getFn() << student.getMinutes() << Student::majorToString(student.getMajor()) << student.getEnthusiasm(); // Customize this based on your Student class members
     return os;
 }

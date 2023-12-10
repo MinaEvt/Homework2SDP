@@ -18,11 +18,11 @@ void LinkedList::print()
     Node *curr = head;
     while (curr != nullptr)
     {
-        std::cout << curr->student.getFn() << ' ' << curr->student.getMinutes() 
-        << ' ' << curr->student.majorToString(curr->student.getMajor()) << ' ' << curr->student.getEnthusiasm() << " -> ";
+        std::cout << curr->student.getFn() << ' ' << curr->student.getMinutes()
+                  << ' ' << curr->student.majorToString(curr->student.getMajor()) << ' ' << curr->student.getEnthusiasm() << " -> ";
         curr = curr->next;
     }
-    std::cout << "nullptr" << std::endl;
+    std::cout << "" << std::endl;
 }
 
 void LinkedList::deleteList()
@@ -37,4 +37,9 @@ void LinkedList::deleteList()
     head = nullptr;
 }
 
-#include "LinkedList.h"
+void LinkedList::addToSameMajorGroup(Student student)
+{
+    Node *newNode = new Node(student);
+
+}
+
