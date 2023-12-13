@@ -1,7 +1,6 @@
 #pragma once
 
-enum class Major
-{
+    enum class Major {
     Fraud,
     International_Schemes,
     Creative_Nihilism,
@@ -10,11 +9,11 @@ enum class Major
     Micromanagmest,
     Applied_Materialization,
     Subjectivistics,
-    Magnetism_and_Clearing
+    Magnetism_and_Clearing,
+    Invalid_Major
 };
 
-class Student
-{
+class Student {
 private:
     unsigned int fn;      // faculty number with 9 digits
     unsigned int minutes; // when arrived
@@ -22,23 +21,25 @@ private:
     unsigned int enthusiasm; // stay duration in minutes
 
 public:
-    static bool isValidFn(int fn);
+    static bool isValidFn(unsigned int fn);
 
     static bool isValidMajor(Major major);
 
     Student();
 
-    int getFn() const;
+    unsigned int getFn() const;
 
     Major getMajor() const;
 
-    int getMinutes() const;
+    unsigned int getMinutes() const;
 
-    int getEnthusiasm() const;
+    unsigned int getEnthusiasm() const;
 
-    Student(int fn, int minutes, Major major, int enthusiasm);
+    Student(unsigned int fn, unsigned int minutes, Major major, unsigned int enthusiasm);
 
     friend std::ostream &operator<<(std::ostream &os, const Student &student);
 
-    static std::string majorToString(Major m) ;
+    static int majorToInt(Major m);
+
+    void decreaseEnthusiasm();
 };

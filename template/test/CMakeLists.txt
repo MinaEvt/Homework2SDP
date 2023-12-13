@@ -2,15 +2,15 @@
 add_executable(unit-tests)
 
 target_link_libraries(
-	unit-tests
-	PRIVATE
+		unit-tests
+		PRIVATE
 		simulator-lib
 		Catch2::Catch2WithMain
 )
 
 target_sources(
-	unit-tests
-	PRIVATE
+		unit-tests
+		PRIVATE
 		"test-simulation.cpp"
 )
 

@@ -143,7 +143,8 @@ src/simulator-lib/CMakeFiles/simulator-lib.dir/bar-simulator.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  C:/Program\ Files/JetBrains/CLion\ 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
- C:\Users\Mina\Desktop\hw2\template\src\simulator-lib\linkedList.cpp \
- C:\Users\Mina\Desktop\hw2\template\src\simulator-lib\linkedList.h \
+ C:\Users\Mina\Desktop\hw2\template\src\simulator-lib\LinkedList.cpp \
+ C:\Users\Mina\Desktop\hw2\template\src\simulator-lib\LinkedList.h \
  C:\Users\Mina\Desktop\hw2\template\src\simulator-lib\Students.cpp \
- C:\Users\Mina\Desktop\hw2\template\src\simulator-lib\Students.h
+ C:\Users\Mina\Desktop\hw2\template\src\simulator-lib\Students.h \
+ C:\Users\Mina\Desktop\hw2\template\src\simulator-lib\vector.cpp

@@ -1,8 +1,8 @@
 #pragma once
+
 #include "Students.cpp"
 
-class Node
-{ // how the elements in the linked list look like
+class Node { // how the elements in the linked list look like
 public:
     Student student; // hold the value of the element
     Node *next;      // pointer that points to the next element
@@ -10,8 +10,7 @@ public:
     Node(Student student);
 };
 
-class LinkedList
-{
+class LinkedList {
 private:
     Node *head; // pointer to the first element in the list
 public:
@@ -23,5 +22,15 @@ public:
 
     void deleteList(); // deletes the list
 
-    void addToSameMajorGroup(Student student);
+    int size() const; //calculate the students in the list
+
+    void removeFirst();
+
+    bool isEmpty() const;
+
+    Node *getHead() const;
+
+    void deleteStudent(Student student);
+
+    ~LinkedList();
 };
