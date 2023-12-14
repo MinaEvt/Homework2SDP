@@ -67,7 +67,7 @@ void simulate_bar(std::istream &input, std::ostream &output) {
     }
 
     vectorClass<Student> students;
-
+    //input student
     for (size_t i = 0; i < numberStudents; i++) {
         unsigned int fn;
         unsigned int minutes, enthusiasm;
@@ -96,8 +96,17 @@ void simulate_bar(std::istream &input, std::ostream &output) {
             students.pop();
         }
 
+        if (studentList.size() == 1){
+            unsigned int enthusiasm = studentList.getHead()->student.getEnthusiasm();
+            unsigned int minutes = studentList.getHead()->student.getMinutes();
+            unsigned int fn = studentList.getHead()->student.getFn();
+            output << minutes << ' ' << fn << " enter\n";
+            output << enthusiasm << ' ' << fn << " exit\n";
+            return;
+        }
+
         //groups
-        while (!studentList.isEmpty()) {
+        while (!studentList.isEmpty() && studentList.size() > 1) {
             LinkedList group;
             unsigned int groupSize = 0;
 
@@ -132,21 +141,18 @@ void simulate_bar(std::istream &input, std::ostream &output) {
         }
 
         //exit
-        if (!studentList.isEmpty()) {
-            Node *currStudentNode = studentList.getHead();
-            while (currStudentNode != nullptr) {
-                Student &currStudent = currStudentNode->student;
-                if (currStudent.getEnthusiasm() == 0) {
-                    output << currTime << ' ' << currStudent.getFn() << ' ' << "exit\n";
-                    studentList.deleteStudent(currStudent);
-                    break;
-                } else {
-                    currStudent.decreaseEnthusiasm();
-                }
+        Node *currStudentNode = studentList.getHead();
+        while (currStudentNode != nullptr) {
+            Student &currStudent = currStudentNode->student;
+            if (currStudent.getEnthusiasm() == 0) {
+                output << currTime << ' ' << currStudent.getFn() << " exit\n";
+                studentList.deleteStudent(currStudent);
+                currStudentNode = studentList.getHead();
+            } else {
+                currStudent.decreaseEnthusiasm();
                 currStudentNode = currStudentNode->next;
             }
         }
-
         currTime++;
     }
     //throw std::exception();
