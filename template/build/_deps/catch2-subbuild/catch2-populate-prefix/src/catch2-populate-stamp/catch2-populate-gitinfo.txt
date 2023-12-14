@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=C:/Program Files/CMake/bin/cmake.exe;-P;C:/Users/Mina/Desktop/hw2/template/build/_deps/catch2-subbuild/catch2-populate-prefix/tmp/catch2-populate-gitclone.cmake
-source_dir=C:/Users/Mina/Desktop/hw2/template/build/_deps/catch2-src
-work_dir=C:/Users/Mina/Desktop/hw2/template/build/_deps
+command=/snap/cmake/1356/bin/cmake;-P;/mnt/c/Users/Mina/Desktop/hw2/template/build/_deps/catch2-subbuild/catch2-populate-prefix/tmp/catch2-populate-gitclone.cmake
+source_dir=/mnt/c/Users/Mina/Desktop/hw2/template/build/_deps/catch2-src
+work_dir=/mnt/c/Users/Mina/Desktop/hw2/template/build/_deps
 repository=https://github.com/catchorg/Catch2.git
 remote=origin
 init_submodules=TRUE

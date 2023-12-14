@@ -1,95 +1,5 @@
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
-no 0 0
-Simple 0 0
-Simple 0 0
-More 0 0
-empty 0 0
-no 0 0
+empty 0 1
+no 0 1
 no 0 0
 Simple 0 0
 Simple 0 0
@@ -100,9 +10,9 @@ no 0 0
 Simple 0 0
 Simple 0 0
 More 0 0
-empty simulation 1 0.0515873
-no students 1 0.0692495
-no space in bar 1 0.0421834
+empty simulation 1 0.119242
+no students 1 0.130543
+no space in bar 1 0.105882
 Simple simulation - one student 0 0
 Simple simulation - one group 0 0
 More complex simulation 0 0

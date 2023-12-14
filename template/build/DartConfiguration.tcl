@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Users/Mina/Desktop/hw2/template
-BuildDirectory: C:/Users/Mina/Desktop/hw2/template/build
+SourceDirectory: /mnt/c/Users/Mina/Desktop/hw2/template
+BuildDirectory: /mnt/c/Users/Mina/Desktop/hw2/template/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -14,7 +14,7 @@ CostDataFile:
 Site: Milka
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Win32-MSBuild
+BuildName: Linux-c++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -27,8 +27,8 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "C:/Users/Mina/Desktop/hw2/template"
-MakeCommand: "C:\Program Files\CMake\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/snap/cmake/1356/bin/cmake" "/mnt/c/Users/Mina/Desktop/hw2/template"
+MakeCommand: /snap/cmake/1356/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -63,8 +63,8 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe
-CompilerVersion: 19.29.30148.0
+Compiler: /usr/bin/c++
+CompilerVersion: 11.4.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -76,12 +76,12 @@ CudaSanitizerCommand:
 CudaSanitizerCommandOptions: 
 MemoryCheckType: 
 MemoryCheckSanitizerOptions: 
-MemoryCheckCommand: MEMORYCHECK_COMMAND-NOTFOUND
+MemoryCheckCommand: /usr/bin/valgrind
 MemoryCheckCommandOptions: 
 MemoryCheckSuppressionFile: 
 
 # Coverage
-CoverageCommand: C:/Program Files (x86)/msys2/ucrt64/bin/gcov.exe
+CoverageCommand: /usr/bin/gcov
 CoverageExtraFlags: -l
 
 # Testing options
@@ -95,7 +95,7 @@ TimeOut: 1500
 # so would cause the system load to exceed this value.
 TestLoad: 
 
-UseLaunchers: 0
+UseLaunchers: 
 CurlOptions: 
 # warning, if you add new options here that have to do with submit,
 # you have to update cmCTestSubmitCommand.cxx

@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/simulator.dir/simulation.cpp.o -o simulator  ../simulator-lib/libsimulator-lib.a 

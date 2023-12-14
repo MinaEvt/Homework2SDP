@@ -1,5 +1,5 @@
-if(EXISTS "C:/Users/Mina/Desktop/hw2/template/cmake-build-debug/test/unit-tests_tests-b12d07c.cmake")
-  include("C:/Users/Mina/Desktop/hw2/template/cmake-build-debug/test/unit-tests_tests-b12d07c.cmake")
+if(EXISTS "/mnt/c/Users/Mina/Desktop/hw2/template/cmake-build-debug/test/unit-tests_tests-b12d07c.cmake")
+  include("/mnt/c/Users/Mina/Desktop/hw2/template/cmake-build-debug/test/unit-tests_tests-b12d07c.cmake")
 else()
   add_test(unit-tests_NOT_BUILT-b12d07c unit-tests_NOT_BUILT-b12d07c)
 endif()

@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG "CMakeFiles/unit-tests.dir/test-simulation.cpp.o" -o unit-tests  ../src/simulator-lib/libsimulator-lib.a ../_deps/catch2-build/src/libCatch2Main.a ../_deps/catch2-build/src/libCatch2.a 

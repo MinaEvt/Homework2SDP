@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.obj"
-  "CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.obj.d"
+  "CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.o"
+  "CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.o.d"
   "libCatch2Maind.a"
   "libCatch2Maind.pdb"
 )

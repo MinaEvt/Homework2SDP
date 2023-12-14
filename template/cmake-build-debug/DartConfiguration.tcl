@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Users/Mina/Desktop/hw2/template
-BuildDirectory: C:/Users/Mina/Desktop/hw2/template/cmake-build-debug
+SourceDirectory: /mnt/c/Users/Mina/Desktop/hw2/template
+BuildDirectory: /mnt/c/Users/Mina/Desktop/hw2/template/cmake-build-debug
 
 # Where to place the cost data store
 CostDataFile: 
@@ -14,7 +14,7 @@ CostDataFile:
 Site: Milka
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Win32-mingw32-make
+BuildName: Linux-c++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -27,8 +27,8 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/bin/cmake.exe" "C:/Users/Mina/Desktop/hw2/template"
-MakeCommand: C:/Program\ Files/JetBrains/CLion\ 2023.3/bin/cmake/win/x64/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/snap/cmake/1356/bin/cmake" "/mnt/c/Users/Mina/Desktop/hw2/template"
+MakeCommand: /snap/cmake/1356/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -63,8 +63,8 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/g++.exe
-CompilerVersion: 13.1.0
+Compiler: /usr/bin/c++
+CompilerVersion: 11.4.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -76,12 +76,12 @@ CudaSanitizerCommand:
 CudaSanitizerCommandOptions: 
 MemoryCheckType: 
 MemoryCheckSanitizerOptions: 
-MemoryCheckCommand: MEMORYCHECK_COMMAND-NOTFOUND
+MemoryCheckCommand: /usr/bin/valgrind
 MemoryCheckCommandOptions: 
 MemoryCheckSuppressionFile: 
 
 # Coverage
-CoverageCommand: C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/gcov.exe
+CoverageCommand: /usr/bin/gcov
 CoverageExtraFlags: -l
 
 # Testing options

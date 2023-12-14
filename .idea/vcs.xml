@@ -4,5 +4,6 @@
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/template/build/_deps/catch2-src" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/template/cmake-build-debug/_deps/catch2-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/template/cmake-build-wsl_profile/_deps/catch2-src" vcs="Git" />
   </component>
 </project>

@@ -4,8 +4,8 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "/snap/cmake/1356/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
       - "CMakeLists.txt:16 (project)"
     message: |
-      The system is: Windows - 10.0.22631 - AMD64
+      The system is: Linux - 5.15.133.1-microsoft-standard-WSL2 - x86_64
 ...

@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2023.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\unit-tests.dir/objects.a
-C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\ar.exe qc CMakeFiles\unit-tests.dir/objects.a @CMakeFiles\unit-tests.dir\objects1.rsp
-C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\unit-tests.dir/objects.a -Wl,--no-whole-archive -o unit-tests.exe -Wl,--out-implib,libunit-tests.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\unit-tests.dir\linkLibs.rsp
+/usr/bin/c++ -g "CMakeFiles/unit-tests.dir/test-simulation.cpp.o" -o unit-tests  ../src/simulator-lib/libsimulator-lib.a ../_deps/catch2-build/src/libCatch2Maind.a ../_deps/catch2-build/src/libCatch2d.a 
