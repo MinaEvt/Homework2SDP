@@ -147,4 +147,4 @@ src/simulator-lib/CMakeFiles/simulator-lib.dir/bar-simulator.cpp.obj: \
  C:\Users\Mina\Desktop\hw2\template\src\simulator-lib\LinkedList.h \
  C:\Users\Mina\Desktop\hw2\template\src\simulator-lib\Students.cpp \
  C:\Users\Mina\Desktop\hw2\template\src\simulator-lib\Students.h \
- C:\Users\Mina\Desktop\hw2\template\src\simulator-lib\vector.cpp
+ C:\Users\Mina\Desktop\hw2\template\src\simulator-lib\Vector.cpp

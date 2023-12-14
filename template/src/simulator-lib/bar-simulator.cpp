@@ -1,6 +1,6 @@
 #include "bar-simulator.h"
 #include "LinkedList.cpp"
-#include "vector.cpp"
+#include "Vector.cpp"
 #include <string>
 
 
@@ -59,11 +59,13 @@ void simulate_bar(std::istream &input, std::ostream &output) {
     if(emptySimulation(maxBarCapacity, maxPeopleInGroup, numberStudents)){
         output << "";
         return;
-    } else if (noStudents(numberStudents)){
+    }
+    else if (maxBarCapacity == 0 && numberStudents > 0 || maxBarCapacity < maxPeopleInGroup) {
+        throw incorrect_simulation("No space in bar");
+    }
+    else if (noStudents(numberStudents)){
         output << "";
         return;
-    } else if (maxBarCapacity == 0 || maxBarCapacity < maxPeopleInGroup) {
-        throw incorrect_simulation("No space in bar");
     }
 
     vectorClass<Student> students;

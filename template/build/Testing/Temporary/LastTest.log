@@ -1,38 +1,22 @@
-Start testing: Dec 14 01:17 FLE Standard Time
+Start testing: Dec 14 02:02 FLE Standard Time
 ----------------------------------------------------------
 1/6 Testing: empty simulation
 1/6 Test: empty simulation
 Command: "C:/Users/Mina/Desktop/hw2/template/build/test/Debug/unit-tests.exe" "empty simulation"
 Directory: C:/Users/Mina/Desktop/hw2/template/build/test
-"empty simulation" start time: Dec 14 01:17 FLE Standard Time
+"empty simulation" start time: Dec 14 02:02 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "empty simulation"
-Randomness seeded to: 2309425222
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-unit-tests.exe is a Catch2 v3.4.0 host application.
-Run with -? for options
-
--------------------------------------------------------------------------------
-empty simulation
--------------------------------------------------------------------------------
-C:\Users\Mina\Desktop\hw2\template\test\test-simulation.cpp(10)
-...............................................................................
-
-C:\Users\Mina\Desktop\hw2\template\test\test-simulation.cpp(10): FAILED:
-due to unexpected exception with message:
-  No space in bar
-
+Randomness seeded to: 2038063138
 ===============================================================================
-test cases: 1 | 1 failed
-assertions: 1 | 1 failed
+All tests passed (1 assertion in 1 test case)
 
 <end of output>
-Test time =   0.02 sec
+Test time =   0.05 sec
 ----------------------------------------------------------
-Test Failed.
-"empty simulation" end time: Dec 14 01:17 FLE Standard Time
+Test Passed.
+"empty simulation" end time: Dec 14 02:02 FLE Standard Time
 "empty simulation" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -40,35 +24,19 @@ Test Failed.
 2/6 Test: no students
 Command: "C:/Users/Mina/Desktop/hw2/template/build/test/Debug/unit-tests.exe" "no students"
 Directory: C:/Users/Mina/Desktop/hw2/template/build/test
-"no students" start time: Dec 14 01:17 FLE Standard Time
+"no students" start time: Dec 14 02:02 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "no students"
-Randomness seeded to: 3690835748
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-unit-tests.exe is a Catch2 v3.4.0 host application.
-Run with -? for options
-
--------------------------------------------------------------------------------
-no students
--------------------------------------------------------------------------------
-C:\Users\Mina\Desktop\hw2\template\test\test-simulation.cpp(18)
-...............................................................................
-
-C:\Users\Mina\Desktop\hw2\template\test\test-simulation.cpp(18): FAILED:
-due to unexpected exception with message:
-  Unknown exception
-
+Randomness seeded to: 2497131863
 ===============================================================================
-test cases: 1 | 1 failed
-assertions: 1 | 1 failed
+All tests passed (1 assertion in 1 test case)
 
 <end of output>
-Test time =   0.02 sec
+Test time =   0.07 sec
 ----------------------------------------------------------
-Test Failed.
-"no students" end time: Dec 14 01:17 FLE Standard Time
+Test Passed.
+"no students" end time: Dec 14 02:02 FLE Standard Time
 "no students" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -76,19 +44,19 @@ Test Failed.
 3/6 Test: no space in bar
 Command: "C:/Users/Mina/Desktop/hw2/template/build/test/Debug/unit-tests.exe" "no space in bar"
 Directory: C:/Users/Mina/Desktop/hw2/template/build/test
-"no space in bar" start time: Dec 14 01:17 FLE Standard Time
+"no space in bar" start time: Dec 14 02:02 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "no space in bar"
-Randomness seeded to: 3781242084
+Randomness seeded to: 357489255
 ===============================================================================
 All tests passed (1 assertion in 1 test case)
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"no space in bar" end time: Dec 14 01:17 FLE Standard Time
+"no space in bar" end time: Dec 14 02:02 FLE Standard Time
 "no space in bar" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -96,11 +64,11 @@ Test Passed.
 4/6 Test: Simple simulation - one student
 Command: "C:/Users/Mina/Desktop/hw2/template/build/test/Debug/unit-tests.exe" "Simple simulation - one student"
 Directory: C:/Users/Mina/Desktop/hw2/template/build/test
-"Simple simulation - one student" start time: Dec 14 01:17 FLE Standard Time
+"Simple simulation - one student" start time: Dec 14 02:02 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "Simple simulation - one student"
-Randomness seeded to: 1874382841
+Randomness seeded to: 3208310337
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 unit-tests.exe is a Catch2 v3.4.0 host application.
@@ -112,19 +80,25 @@ Simple simulation - one student
 C:\Users\Mina\Desktop\hw2\template\test\test-simulation.cpp(39)
 ...............................................................................
 
-C:\Users\Mina\Desktop\hw2\template\test\test-simulation.cpp(39): FAILED:
-due to unexpected exception with message:
-  Unknown exception
+C:\Users\Mina\Desktop\hw2\template\test\test-simulation.cpp(44): FAILED:
+  REQUIRE( output.str() == "0 17 enter\n3 17 exit\n" )
+with expansion:
+  "0 17enter
+  "
+  ==
+  "0 17 enter
+  3 17 exit
+  "
 
 ===============================================================================
 test cases: 1 | 1 failed
 assertions: 1 | 1 failed
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.08 sec
 ----------------------------------------------------------
 Test Failed.
-"Simple simulation - one student" end time: Dec 14 01:17 FLE Standard Time
+"Simple simulation - one student" end time: Dec 14 02:02 FLE Standard Time
 "Simple simulation - one student" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -132,11 +106,11 @@ Test Failed.
 5/6 Test: Simple simulation - one group
 Command: "C:/Users/Mina/Desktop/hw2/template/build/test/Debug/unit-tests.exe" "Simple simulation - one group"
 Directory: C:/Users/Mina/Desktop/hw2/template/build/test
-"Simple simulation - one group" start time: Dec 14 01:17 FLE Standard Time
+"Simple simulation - one group" start time: Dec 14 02:02 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "Simple simulation - one group"
-Randomness seeded to: 3105692784
+Randomness seeded to: 687997522
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 unit-tests.exe is a Catch2 v3.4.0 host application.
@@ -148,19 +122,28 @@ Simple simulation - one group
 C:\Users\Mina\Desktop\hw2\template\test\test-simulation.cpp(47)
 ...............................................................................
 
-C:\Users\Mina\Desktop\hw2\template\test\test-simulation.cpp(47): FAILED:
-due to unexpected exception with message:
-  Unknown exception
+C:\Users\Mina\Desktop\hw2\template\test\test-simulation.cpp(61): FAILED:
+  REQUIRE( output.str() == expected )
+with expansion:
+  "0 100enter
+  0 200enter
+  "
+  ==
+  "0 100 enter
+  5 100 exit
+  5 200 enter
+  10 200 exit
+  "
 
 ===============================================================================
 test cases: 1 | 1 failed
 assertions: 1 | 1 failed
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"Simple simulation - one group" end time: Dec 14 01:17 FLE Standard Time
+"Simple simulation - one group" end time: Dec 14 02:02 FLE Standard Time
 "Simple simulation - one group" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -168,11 +151,11 @@ Test Failed.
 6/6 Test: More complex simulation
 Command: "C:/Users/Mina/Desktop/hw2/template/build/test/Debug/unit-tests.exe" "More complex simulation"
 Directory: C:/Users/Mina/Desktop/hw2/template/build/test
-"More complex simulation" start time: Dec 14 01:17 FLE Standard Time
+"More complex simulation" start time: Dec 14 02:02 FLE Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "More complex simulation"
-Randomness seeded to: 390631747
+Randomness seeded to: 219423720
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 unit-tests.exe is a Catch2 v3.4.0 host application.
@@ -193,11 +176,11 @@ test cases: 1 | 1 failed
 assertions: 1 | 1 failed
 
 <end of output>
-Test time =   0.02 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Failed.
-"More complex simulation" end time: Dec 14 01:17 FLE Standard Time
+"More complex simulation" end time: Dec 14 02:02 FLE Standard Time
 "More complex simulation" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Dec 14 01:17 FLE Standard Time
+End testing: Dec 14 02:02 FLE Standard Time

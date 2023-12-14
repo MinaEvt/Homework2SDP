@@ -148,8 +148,8 @@ src/simulator-lib/CMakeFiles/simulator-lib.dir/bar-simulator.cpp.obj: C:/Users/M
   C:/Users/Mina/Desktop/hw2/template/src/simulator-lib/LinkedList.h \
   C:/Users/Mina/Desktop/hw2/template/src/simulator-lib/Students.cpp \
   C:/Users/Mina/Desktop/hw2/template/src/simulator-lib/Students.h \
-  C:/Users/Mina/Desktop/hw2/template/src/simulator-lib/bar-simulator.h \
-  C:/Users/Mina/Desktop/hw2/template/src/simulator-lib/Vector.cpp
+  C:/Users/Mina/Desktop/hw2/template/src/simulator-lib/Vector.cpp \
+  C:/Users/Mina/Desktop/hw2/template/src/simulator-lib/bar-simulator.h
 
 
 C:/Program\ Files/JetBrains/CLion\ 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h:
@@ -446,6 +446,6 @@ C:/Users/Mina/Desktop/hw2/template/src/simulator-lib/LinkedList.h:
 
 C:/Users/Mina/Desktop/hw2/template/src/simulator-lib/Students.cpp:
 
-C:/Users/Mina/Desktop/hw2/template/src/simulator-lib/bar-simulator.h:
-
 C:/Users/Mina/Desktop/hw2/template/src/simulator-lib/Vector.cpp:
+
+C:/Users/Mina/Desktop/hw2/template/src/simulator-lib/bar-simulator.h:
