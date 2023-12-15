@@ -54,6 +54,8 @@ void simulate_bar(std::istream &input, std::ostream &output) {
     unsigned int maxPeopleInGroup; // people in group capacity
     unsigned int numberStudents; // number of students
 
+    unsigned int peopleInBar = 0;
+
     input >> maxBarCapacity >> maxPeopleInGroup >> numberStudents;
 
     if (emptySimulation(maxBarCapacity, maxPeopleInGroup, numberStudents)) {
@@ -67,6 +69,7 @@ void simulate_bar(std::istream &input, std::ostream &output) {
     }
 
     vectorClass<Student> students;
+
     //input student
     for (size_t i = 0; i < numberStudents; i++) {
         unsigned int fn;
@@ -89,14 +92,15 @@ void simulate_bar(std::istream &input, std::ostream &output) {
     LinkedList studentList;
     unsigned int currTime = 0;
 
-    //new students arrival
+    //add students to vector
     while (!students.empty() || !studentList.isEmpty()) {
         while (!students.empty() && students.back().getMinutes() == currTime) {
             studentList.insertAtBeginning(students.back());
             students.pop();
         }
 
-        if (studentList.size() == 1){
+        //enter in bar if only one student
+        if (studentList.size() == Student::MIN_STUDENTS) {
             unsigned int enthusiasm = studentList.getHead()->student.getEnthusiasm();
             unsigned int minutes = studentList.getHead()->student.getMinutes();
             unsigned int fn = studentList.getHead()->student.getFn();
@@ -106,37 +110,49 @@ void simulate_bar(std::istream &input, std::ostream &output) {
         }
 
         //groups
-        while (!studentList.isEmpty() && studentList.size() > 1) {
+        while (!studentList.isEmpty() && studentList.size() > Student::MIN_STUDENTS) {
             LinkedList group;
             unsigned int groupSize = 0;
 
+            //create group
             Node *currNode = studentList.getHead();
-            while (currNode != nullptr && groupSize < maxPeopleInGroup) {
-                Student &currStudent = currNode->student;
-                if (currStudent.getMajor() == studentList.getHead()->student.getMajor()) {
-                    group.insertAtBeginning(currStudent);
-                    studentList.deleteStudent(currStudent);
+            Student &currStudent = currNode->student;
+            group.insertAtBeginning(currStudent);
+            studentList.deleteStudent(currStudent);
+            groupSize++;
+
+            if (group.isEmpty()) {
+                while (groupSize <= maxPeopleInGroup && currNode->next != nullptr) {
+                    Student &nextStudent = currNode->next->student;
+                    if (currStudent.getMajor() == nextStudent.getMajor()) {
+                        group.insertAtBeginning(nextStudent);
+                        studentList.deleteStudent(nextStudent);
+                        groupSize++;
+                    } else {
+                        nextStudent = currNode->next->student;
+                    }
                 }
-                if (currNode->next) {
-                    currNode = currNode->next;
-                }
-                groupSize++;
             }
 
-            //enter
-            if (groupSize == maxPeopleInGroup) {
+            //enter group in bar
+            unsigned int spaceInBar = maxBarCapacity - peopleInBar;
+            if (groupSize <= spaceInBar) {
                 Node *groupNode = group.getHead();
-                while (groupNode != nullptr) {
-                    output << currTime << " " << groupNode->student.getFn() << ' ' << "enter\n";
+                while (groupNode != nullptr && spaceInBar != 0 && groupSize != 0) {
+                    output << groupNode->student.getMinutes() << " " << groupNode->student.getFn() << ' '
+                           << "enter\n";
                     groupNode = groupNode->next;
+                    groupSize--;
+                    peopleInBar++;
+                    spaceInBar = maxBarCapacity - peopleInBar;
                 }
             } else {
                 Node *groupNode = group.getHead();
                 while (groupNode != nullptr) {
                     studentList.insertAtBeginning(groupNode->student);
                     groupNode = groupNode->next;
+                    groupSize--;
                 }
-                break;
             }
         }
 
@@ -148,6 +164,7 @@ void simulate_bar(std::istream &input, std::ostream &output) {
                 output << currTime << ' ' << currStudent.getFn() << " exit\n";
                 studentList.deleteStudent(currStudent);
                 currStudentNode = studentList.getHead();
+                peopleInBar--;
             } else {
                 currStudent.decreaseEnthusiasm();
                 currStudentNode = currStudentNode->next;
@@ -155,5 +172,4 @@ void simulate_bar(std::istream &input, std::ostream &output) {
         }
         currTime++;
     }
-    //throw std::exception();
 }

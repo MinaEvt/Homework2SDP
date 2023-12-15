@@ -21,6 +21,7 @@ private:
     unsigned int enthusiasm; // stay duration in minutes
 
 public:
+    const static int MIN_STUDENTS = 1;
     static bool isValidFn(unsigned int fn);
 
     static bool isValidMajor(Major major);
